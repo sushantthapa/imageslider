@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    
+    <title>HTML PROJECTS</title>
+    
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin:0px;
+        box-sizing: border-box;
+    }
+
+    .carousel-container{
+        width:60%;
+        margin:auto;
+        border:5px solid #000000;
+        overflow: hidden;
+        position: relative;
+    }
+    .carousel-slide{
+        display:flex;
+        width:100%;
+        height:500px;
+
+    }
+    #prevBtn{
+        position:absolute;
+        top:50%;
+        z-index:10;
+        left:5%;
+        font-size: 30px;
+         cursor:pointer;
+
+    }
+    #nextBtn{
+        position:absolute;
+        top:50%;
+        z-index:10;
+        right:5%;
+        font-size: 30px;
+        cursor:pointer;
+
+    }
+    
+    
+</style>
+<body>
+    <i class="fas fa-arrow-left" id="prevBtn"></i>
+    <i class="fas fa-arrow-right"  id="nextBtn"></i>
+  
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="image/c.jpg" id="lastClone" alt="">
+            <img src="image/a.jpg" alt="">
+            <img src="image/b.jpg" alt="">
+            <img src="image/c.jpg" alt="">
+            <img src="image/a.jpg" id="firstClone" alt="">
+        </div>
+    </div>
+   
+   
+    <script src="script.js"></script>
+
+        
+</body>
+</html>
